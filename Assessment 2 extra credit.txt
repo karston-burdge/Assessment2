@@ -1,0 +1,7 @@
+﻿Amazon, one of the largest companies in the world uses all sorts of technology which includes but is not limited to: Programming languages like Java, objective C, or C++(Java being the preferred language company wide.). DynamoDB, RDS/Aurora, Redshift is the database used by Amazon. Amazon also uses a variety of tools under their “Amazon Web Service” one of which is Amazon S3, a scalable, high-speed, web-based cloud storage service.
+
+
+Nintendo uses primarily uses the following programming languages: C / C++, C#, SQL and Python. They also use a lot of photoshop, Aws, and Git. They require a lot of their employees and for the most part while researching ive found that you need to have a firm understanding of specifically C++, as well as hardware and software design and compiler and linker tech.
+
+
+Google uses these four languages: C++, Java, Python, and JavaScript. Google also has their own OS, server, filesystem, and pretty much everything else. Ive also read that they are starting to dive more and more heavily into the implementation of AI.
