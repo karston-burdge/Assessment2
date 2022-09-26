@@ -20,8 +20,17 @@
 */
 
 //CODE HERE
+class Employee {
+    constructor(name1, shifts){
+        this.name = name1;
+        this.shifts = shifts;
+    }
+    getSchedule(){
+    console.log(`${name1} works on ${shifts}`);
 
+};
 
+}
 
 /*
     Create a new instance of your class.
@@ -34,6 +43,7 @@
 */
 
 //CODE HERE
+let empOne = new Employee('Jess', 'weekday mornings, weekday afternoons')
 
 /*
     Call the `getSchedule` method on the
@@ -41,7 +51,7 @@
 */
 
 //CODE HERE
-
+console.log(empOne)
 
 /*
     Make a copy of the empOne object
@@ -57,7 +67,9 @@
 
 //CODE HERE
 
-
+const empTwo = {...empOne}
+empTwo.name = "Nick"
+console.log(empTwo)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -84,6 +96,15 @@
 
 //CODE HERE
 
+class Manager extends Employee{
+    constructor(name1, shifts,[employees]){
+        super(name1, shifts)
+
+        this.employees = [employees]
+    }
+    
+
+}
 
 
 /*

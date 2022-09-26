@@ -57,6 +57,7 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
 function canWeDeliver(zipcode){
+    return zipcode 
     
 }
 

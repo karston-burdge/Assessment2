@@ -31,6 +31,21 @@
 */
 
 //CODE HERE
+let pizza = {
+    
+        name: "pizza,",
+        price: 10.99,
+        category: "italian food",
+        popularity: 6,
+        rating: 2,
+        tags: ['gluten-free', 'kids']
+    
+
+}
+
+    
+
+
 
 
 
@@ -43,7 +58,7 @@
 */
 
 //CODE HERE
-
+console.log(pizza.popularity)
 
 /*
     Second, log the second tag in your pizza's
@@ -53,7 +68,7 @@
 */
 
 //CODE HERE
-
+console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -63,7 +78,8 @@
 */
 
 //CODE HERE
-
+const {name: foodName, price: foodPrice, category: foodCategory, popularity: foodPopularity, rating: foodRating, tags: foodTags,} = pizza
+console.log(foodPrice)
 
 /*
     Fourth, and last, destructure the category
@@ -73,7 +89,7 @@
 */
 
 //CODE HERE
-
+console.log(foodCategory)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -88,6 +104,51 @@
 */
 
 //CODE HERE
+let foodArr = [
+    {
+        name: "Sausage",
+        price: 9.99,
+        category: "entree",
+        popularity: 8,
+        rating: 3.8,
+        tags: ["Chicago", "Pizza pie"]
+    },
+    {
+        name: "Deep Dish",
+        price: 17.99,
+        category: "entree",
+        popularity: 10,
+        rating: 5,
+        tags: ["Chicago", "Pizza pie"]
+    },
+    {
+        name: "Cookie",
+        price: 7.99,
+        category: "Dessert",
+        popularity: 7,
+        rating: 3,
+        tags: ["Sweet"]
+    },
+    {
+        name: "Spicy",
+        price: 6.66,
+        category: "appetizer",
+        popularity: 5,
+        rating: 2,
+        tags: ["spicy", "Adult"]
+    },
+    {
+        name: "sausage",
+        price: 7.99,
+        category: "entree",
+        popularity: 10,
+        rating: 4.8,
+        tags: ["New York"]
+    }
+]
+//*I was following along during the review so sorry if it looks the same as your guys -Karston */
+
+
 
 
 
@@ -149,6 +210,21 @@
 */
 
 //CODE HERE
+const filterByProperty = (property, number, type) => {
+    let filteredArray = [];
+    
+    if (type === "above") {
+        filteredArray = foodArr.filter( (pizza_obj) => pizza_obj[property] > number)
+       
+    } else {
+       
+        filteredArray = foodArr.filter( (pizza_obj) => pizza_obj[property] < number) 
+    }
+    return filteredArray;
+}
+
+
+
 
 
 /*
@@ -159,3 +235,4 @@
 */
 
 //CODE HERE
+console.log(filterByProperty("popularity", 9, "above"))
